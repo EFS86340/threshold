@@ -38,11 +38,6 @@ func GenNodesPriKey(n int, suite *edwards25519.SuiteEd25519) ([]kyber.Scalar, []
 	return sKeys, pKeys
 }
 
-// writePublicKey write node's public key to local file to simulate public keys broadcasting
-func writePublicKey() {
-
-}
-
 // ThreshEnc encrypt the message in ElGamal encryption
 func ThreshEnc(group kyber.Group, pKeys []kyber.Point, msg []byte) (K, C kyber.Point, cipher []byte) {
 	masterPK := pKeys[0] // master elgamal public key

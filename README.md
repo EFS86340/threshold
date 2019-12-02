@@ -16,3 +16,7 @@ FAIL
 exit status 1
 FAIL    threshold/elgamal       0.010s
 ```
+
+
+Add wrapper AES-128-GCM for large-size message en/decryption.
+ElGamal encrypts only the encryption key for AES-128-GCM, a.k.a 16-byte long block cipher key.
